@@ -1,0 +1,88 @@
+/* Google font */
+* {
+    font-family: "Commissioner", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400 500 700;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "FLAR" 0,
+      "VOLM" 0;
+  }
+
+/* Buttons */
+.btn {
+    padding: 12px 35px;
+    border: none;
+    border-radius: 35px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+}
+
+.background-green {
+    background-color: rgba(60, 179, 171, 1);
+}
+
+.backgroud-grey {
+    background-color:rgba(177, 177, 177, 1);
+}
+.btn-bookmark {
+    background-color: rgba(199, 199, 199, 0.271);
+}
+
+.bookmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.bookmark-text {
+    padding-left: 20px;
+}
+
+/* Header */
+
+.logo {  
+    color: white;
+}
+
+.navbar {
+    padding: 0;
+    margin: 0;
+}
+
+.header-row {
+    position:absolute;
+    display: flex;
+    align-items: center;
+    margin: 10px 40px;
+    justify-content: space-between;
+    top: 50px;
+    width: -webkit-fill-available;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: white; 
+}
+
+/* Project Intro Section */
+
+.project-riser {
+    position: relative;
+    text-align: center;
+}
+
+.project-logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+};
+
+
+
