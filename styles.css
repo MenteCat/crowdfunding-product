@@ -1,4 +1,4 @@
-/* Google font */
+/* Google font & Generals */
 * {
     font-family: "Commissioner", sans-serif;
     font-optical-sizing: auto;
@@ -132,6 +132,7 @@ body {
     text-align: justify;
     position: absolute;
     padding-top: 30vh;
+    
 }
 
 /* About section */
@@ -139,6 +140,7 @@ body {
 .about {
     position: relative;
     align-items: center;
+    padding: 25px;
 
 }
 
