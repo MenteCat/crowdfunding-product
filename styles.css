@@ -82,12 +82,31 @@
     display: flex;
     align-content: center;
     justify-content: center;
-};
+}
 
 .buttons-row {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+    
 }
 
+/* Counter Section */
+
+.counter-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 245px;
+}
+
+/* About section */
+
+.about {
+    position: relative;
+    align-items: center;
+
+}
 
 
