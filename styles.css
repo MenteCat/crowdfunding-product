@@ -175,4 +175,52 @@ body {
 
 }
 
+.about p {
+    width: 100%;
+}
 
+/* Pledge section */
+
+.pledge-card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0px 0px 1px  rgba(177, 177, 177, 1);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+/* Pledge card */
+
+.pledge-top-right {
+    color: rgba(60, 179, 171, 1);
+    font-weight: 500;
+    font-size: 80%;
+
+}
+
+.stock-number {
+    font-weight: 700;
+    font-size: 130%;
+}
+
+.stock-text {
+    vertical-align: text-top;
+    font-size: 85%;
+    padding-left: 5px;
+
+}
+
+.pledge-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.pledge-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
