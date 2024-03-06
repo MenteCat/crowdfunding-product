@@ -17,6 +17,8 @@ body {
 .card-background {
     background-color: white;
     border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -192,12 +194,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+   
+}
+/* Pledge card */
+
+.pledge-item {
     box-shadow: 0px 0px 1px  rgba(177, 177, 177, 1);
     padding: 25px;
     margin-bottom: 20px;
     border-radius: 5px;
 }
-/* Pledge card */
 
 .pledge-top-right {
     color: rgba(60, 179, 171, 1);
