@@ -242,3 +242,35 @@ body {
     opacity: 0.5;
     pointer-events: none;
 }
+
+/* Modal Default */
+
+#modal {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+.modal-header {
+
+}
+
+.close-modal {
+
+}
+
+.title {
+
+}
+
+.amount {
+
+}
+
+.info {
+
+}
+
+.unavailable {
+    
+}
