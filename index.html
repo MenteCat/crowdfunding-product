@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Crowdfunding product page</title>
 
   <link rel="stylesheet" href="styles.css">
+  
   <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
   
 </head>
@@ -46,7 +47,7 @@
         
         <div class="buttons-row">
             <div>
-            <button id="modal-button" class="btn background-green">Back this project</button>
+            <button id="modal-button" data-modal-target="modal1" class="btn background-green">Back this project</button>
             </div>
             <div>
             <button class="btn btn-bookmark"><img class="bookmark" src = "images/icon-bookmark.svg"  alt="icon bookmark"/><span class="bookmark-text">Bookmark</span></button>
@@ -139,11 +140,12 @@
 
     <!-- Modal Default Section  -->
     
-    <!-- <div id="modal">
+    <div class="modal" id="modal1">
+      <div class="modal-content">
       <div class="modal-header">
+        <span class="modal-close">&times;</span>
         <h2>Back this project</h2>
         <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
-        <button id="close-modal">&times;</button>
       </div>
       <div class="modal-body">
         <div class="pledge-modal-item">
@@ -192,11 +194,13 @@
           </div>
         </div>
       </div>
-    </div> -->
+      </div>
+    </div>
   <!-- Selection Modal End -->
 
 
   </div>
+  <script src="JS/modal.js"></script>
 
 </body>
 </html>
