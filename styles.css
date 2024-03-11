@@ -126,10 +126,7 @@ body {
 .counter-group {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     align-items: center;
-    /* justify-content: space-evenly;
-    padding: 20px 245px; */ */
 }
 
 .counter-item {
@@ -302,7 +299,7 @@ animation: fadeOutUp 0.2s ease-in-out forwards;
 }
   @media(max-width:767px) {
     html { font-size: 12px; }
-    .modal-content { padding: 2rem 1rem 1rem 1rem; width: 90%; }
+    .modal-content { padding: 2rem 2rem 2rem 2rem; width: 90%; }
 }
 
 
@@ -319,25 +316,54 @@ animation: fadeOutUp 0.2s ease-in-out forwards;
 
 .pledge-modal-item {
     border: 1px solid rgba(177, 177, 177, 1);
-    border-radius: 5px;
-    height: 140px;
+    border-radius: 10px;
+    height: 110px;
     overflow: hidden;
     display: grid;
+    padding: 10px;
+    position: relative;
     
 }
 
-.title {
+.pledge-modal {
+    color: rgba(60, 179, 171, 1);
+    font-weight: 500;
+    font-size: 95%;
+    padding-left:15px;
 
 }
 
-.amount {
+.title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.title-section .title {
+    margin-bottom: 0;
+  }
+
+.amount {
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: translateY(60%);
+    padding-right: 25px;
 }
 
 .info {
+    padding-left: 40px;
+    padding-right: 10px;
+    align-items: center;
+  }
 
+.info p {
+width: 100%;
 }
 
-.unavailable {
-    
+.radio {
+width: 20px;
+height: 20px;
+transform: translateY(60%);
+margin-right: 15px;
 }
