@@ -151,7 +151,7 @@
           <div class="pledge-modal-item">
             <div class="title-section">
             <div class="title">
-              <input class="radio" type="radio" name="no reward" value="no-reward">
+              <input class="radio" type="radio" name="select" id="no-reward">
               <label><strong>Pledge with no reward</strong></label>
             </div>
           </div>
@@ -160,11 +160,16 @@
             Choose to support us without a reward if you simply believe in our project. 
             As a backer, you will be signed up to receive product updates via email.</p>
           </div>
+          <div class="bid">
+            <label for="any-bid">Enter your pledge</label>
+            <input type="number" class="input-bid" id="any-pledge" min="0" placeholder="$0" required>
+            <button class="btn background-green pay" id="any-continue">Continue</button>
+          </div>
         </div>
         <div class="pledge-modal-item">
           <div class="title-section">
             <div class="title">
-              <input class="radio" type="radio" name="bamboo stand" value="bamboo-stand">
+              <input class="radio" type="radio" name="select" id="bamboo-stand" checked>
               <label><strong>Bamboo Stand<span class="pledge-modal">Pledge $25 or more</span></strong></label>
             </div>
             <div class="amount">
@@ -176,11 +181,16 @@
             You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, 
             and you’ll be added to a special Backer member list.</p>
           </div>
+          <div class="bid">
+            <label for="bamboo-bid">Enter your pledge</label>
+            <input type="number" class="input-bid" id="bamboo-pledge" min="25" placeholder="$25" required>
+            <button class="btn background-green pay" id="bamboo-continue">Continue</button>
+          </div>
         </div>
         <div class="pledge-modal-item">
           <div class="title-section">
             <div class="title">
-              <input class="radio" type="radio" name="black stand " value="black-stand">
+              <input class="radio" type="radio" name="select" id="black-stand">
               <label><strong>Black Edition Stand<span class="pledge-modal">Pledge $75 or more</span></strong></label>
             </div>
             <div class="amount">
@@ -190,6 +200,11 @@
           <div class="info">
             <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
             member list. Shipping is included.</p>
+          </div>
+          <div class="bid">
+              <label for="black-special-bid">Enter your pledge</label>
+              <input type="number" class="input-bid" id="black-special-pledge" min="75" placeholder="$75" required>
+              <button class="btn background-green" type="button" data-toggle="modal" data-target="#success-tick">Continue</button>
           </div>
         </div>
         <div class="pledge-modal-item out-of-stock">
@@ -212,9 +227,28 @@
     </div>
   <!-- Selection Modal End -->
 
+  <!-- Success modal start -->
+  <div id="success-tick" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <a class="close" href="#" data-dismiss="modal">&times;</a>
+      <img src="images/icon-check.svg" id="success-icon">   
+      <h3>Thanks for your support!</h3>
+      <p> Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.</p>
+      <button id="final-success">Got it!</button>
+      </div>
+    </div>
+  </div>
+  <!-- Success modal end -->
+  
+
+  
+
+
 
   </div>
   <script src="JS/modal.js"></script>
+  <script src="JS/success.js"></script>
 
 </body>
 </html>

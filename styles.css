@@ -315,13 +315,18 @@ animation: fadeOutUp 0.2s ease-in-out forwards;
 }
 
 .pledge-modal-item {
+    
     border: 1px solid rgba(177, 177, 177, 1);
     border-radius: 10px;
-    height: 110px;
+    height: 150px;
     overflow: hidden;
     display: grid;
     padding: 10px;
     position: relative;
+
+    &:hover {
+        border: 2px solid rgba(60, 179, 171, 1);
+      }
     
 }
 
@@ -367,3 +372,56 @@ height: 20px;
 transform: translateY(60%);
 margin-right: 15px;
 }
+
+
+/* pledge items, bid session */
+
+.bid {
+    border-top: 1px solid rgba(177, 177, 177, 1);
+    margin-left: -10px;
+    margin-right: -10px;
+    border-top-width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    
+}
+
+.input-bid {
+    margin-left: 260px;
+    margin-right: 10px;
+    width:4%;
+    padding: 15px 35px;
+    border: 2px solid rgba(199, 199, 199, 0.271);
+    border-radius: 35px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+
+}
+
+/* SUCCESS MODAL */
+
+
+body{
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 100%;
+  }
+   #success_tic .page-body{
+    max-width:300px;
+    background-color:#FFFFFF;
+    margin:10% auto;
+  }
+  
+  #success_tic .close{
+      opacity: 1;
+      position: absolute;
+      right: 0px;
+      font-size: 30px;
+      padding: 3px 15px;
+    margin-bottom: 10px;
+  }
+ 
